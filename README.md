@@ -1,5 +1,7 @@
 # WikiSearch
 
+The WikiSearch app allows users to search Wikipedia for any topic and receive summarized results in real-time. Users can type in a query or select from suggested topics. The app fetches relevant Wikipedia articles, summarizes the content using an AI model from AWS Bedrock, and displays the information in an easy-to-read format.
+
 When a user interacts with the GenAI app, the flow is as follows:
 
 1. The user inserts a text question into to the streamlit app. (app.py).
