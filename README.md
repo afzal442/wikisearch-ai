@@ -1,20 +1,10 @@
-# Amazon-Bedrock-Claude3-Streaming-Response-POC
-This is sample code demonstrating the use of Amazon Bedrock and Generative AI to implement streaming responses. The application is constructed with a simple streamlit frontend where users can input zero shot requests directly against the LLM of their choice, leveraging a streaming response technique.
-
-![Alt text](images/demo.gif)
-# **Goal of this Repo:**
-The goal of this repo is to provide users the ability to use Amazon Bedrock leveraging its streaming response capabilities.
-This repo comes with a basic frontend to help users stand up a proof of concept in just a few minutes.
-
-The architecture and flow of the sample application will be:
-
-![Alt text](images/architecture.png "POC Architecture")
+# WikiSearch
 
 When a user interacts with the GenAI app, the flow is as follows:
 
 1. The user inserts a text question into to the streamlit app. (app.py).
-2. The streamlit app, takes the text and passes it into Amazon Bedrock. (invoke_llm_with_streaming.py).
-3. A natural language response is streamed to the end user, answering a question in general. (app.py).
+2. The streamlit app, takes the text and passes it into Amazon Bedrock. (llm_model.py).
+3. A natural language response is streamed to the end user, answering a question in general. (streamlit_app.py).
 
 # How to use this Repo:
 
@@ -22,13 +12,6 @@ When a user interacts with the GenAI app, the flow is as follows:
 
 1. Amazon Bedrock Access and CLI Credentials. Ensure that the proper FM model access is provided in the Amazon Bedrock console
 2. Ensure Python 3.10 installed on your machine, it is the most stable version of Python for the packages we will be using, it can be downloaded [here](https://www.python.org/downloads/release/python-3911/).
-
-## Step 1:
-The first step of utilizing this repo is performing a git clone of the repository.
-
-```
-https://github.com/aws-samples/genai-quickstart-pocs.git
-```
 
 After cloning the repo onto your local machine, open it up in your favorite code editor. The file structure of this repo is broken into 3 key files,
 the app.py file, the invoke_llm_with_streaming.py file and the requirements.txt. The app.py file houses the frontend application (a streamlit app). 

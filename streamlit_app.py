@@ -7,7 +7,7 @@ import wikipedia
 import os
 
 # Initialize LaunchDarkly client
-sdk_key = os.getenv("LAUNCHDARKLY_SDK_KEY")
+sdk_key = "sdk-71aab539-8f07-4927-8ac6-87e7b12df8a8"
 feature_flag_key = "wikisearch"
 
 if not sdk_key:
